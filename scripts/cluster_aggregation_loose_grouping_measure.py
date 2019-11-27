@@ -6,9 +6,6 @@ from collections import OrderedDict
 import numpy as np
 import sys 
 import itertools 
-import line_measure as lines 
-import pair_measure as pairs 
-import triangular_lattice_measure as triangular 
 
 
 def adaptYPos(y):
@@ -275,12 +272,7 @@ tmp = list(itertools.chain.from_iterable(indices))
 tmp.sort()
 no_id = missing_elements(tmp)
 
-# check elements to be within line structure or pair structure 
-noLine = lines.measure_line(file)
-noPair =  pairs.measure_pairs(file)
-noTriangular = triangular.measure_triangles(file)
-
-# check if not yet grouped elements are loosely grouped 
+# agents not in aggregate
 for idx in no_id:
 	noAggregate.append(all_agents[idx])
 
