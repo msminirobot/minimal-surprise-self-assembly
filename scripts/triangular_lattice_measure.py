@@ -151,3 +151,4 @@ if __name__ == "__main__":
 	f.write('percentage of agents not within structure: %f\n\n' % (float(len(noLattice))/float(agents)))
 	f.write('agents within trianguar lattice: %d\n' % len(lattice))
 	f.write('percentage of agents within structure: %f\n \n' % (float(len(lattice))/float(agents)))
+	f.close() 
