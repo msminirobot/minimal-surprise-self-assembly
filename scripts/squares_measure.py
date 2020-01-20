@@ -152,3 +152,4 @@ if __name__ == "__main__":
 	f.write('percentage of agents not within structure: %f\n' % (float(len(noSquare))/float(agents)))
 	f.write('agents within squares: %d\n' % len(square))
 	f.write('percentage of agents within structure: %f\n \n' % (float(len(square))/float(agents)))
+	f.close()
