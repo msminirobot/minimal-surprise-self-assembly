@@ -535,5 +535,5 @@ if __name__ == "__main__":
 	if vertical > 0: 
 	    f.write('agents in vertical lines: %f\n' % (float(vertical_agents)/float(agents-len(noLine))))
 	f.write('grid spanning lines: %d\n' % grid_spanning)
-
+	f.close()
 
