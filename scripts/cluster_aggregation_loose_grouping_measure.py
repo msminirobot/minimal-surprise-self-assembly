@@ -307,6 +307,5 @@ else:
 	else: 
 	    f.write('structure: Clusters')
 
-
-
+f.close()
 
