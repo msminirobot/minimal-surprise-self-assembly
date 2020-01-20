@@ -119,5 +119,5 @@ if __name__ == "__main__":
 	f.write('percentage of agents not within structure: %f\n' % (float(len(none))/float(agents)))
 	f.write('agents within pair structure: %d\n' % (len(pairs)))
 	f.write('percentage of agents within structure: %f\n \n' % (len(pairs)/float(agents)))
-
+	f.close()
 
